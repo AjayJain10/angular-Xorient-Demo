@@ -1,0 +1,30 @@
+<div class="container">
+
+  <form [formGroup]="hotelForm">
+    <div class="row">
+      <div class="flex-container">
+
+        <div class="flex-item">
+          <label for="hotelname">Hotel Name:</label>
+          <input type="text" id="hotelname" formControlName="hotelName"/>
+        </div>
+
+        <div class="flex-item">
+          <label for="Rating">Rating:</label>
+          <select id="rating" formControlName="rating">
+    <option *ngFor="let ratingVal of ratingValues" value="ratingVal">  {{ratingVal}}</option>
+    </select>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+      <label for="description">Description:</label>
+      <input type="text" id="description" formControlName="description"/>
+    </div>
+
+  </form>
+
+</div>

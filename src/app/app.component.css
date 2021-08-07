@@ -1,0 +1,11 @@
+* {
+  font-family: Lato;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  margin-right: 10px;
+}
